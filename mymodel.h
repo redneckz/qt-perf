@@ -7,6 +7,7 @@
 class MyModel : public QAbstractTableModel
 {
     Q_OBJECT
+
 public:
     MyModel(QObject *parent);
     int rowCount(const QModelIndex &parent = QModelIndex()) const ;

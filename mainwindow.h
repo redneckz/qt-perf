@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "mytable.h"
 #include "mymodel.h"
 
 namespace Ui {
@@ -16,8 +17,10 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private slots:
+private Q_SLOTS:
     void on_horizontalSlider_valueChanged(int value);
+
+    void on_tableView_framesPerSecond(unsigned fps);
 
 private:
     Ui::MainWindow *ui;

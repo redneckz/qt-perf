@@ -27,11 +27,13 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-        mymodel.cpp
+        mymodel.cpp \
+        mytable.cpp
 
 HEADERS += \
         mainwindow.h \
-        mymodel.h
+        mymodel.h \
+        mytable.h
 
 FORMS += \
         mainwindow.ui
